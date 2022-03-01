@@ -5,24 +5,22 @@ collecting pstacks on the main splunkd PID
 1. install the collect-stacks.sh script onto the host
 https://github.com/rephillips/debugging_splunk/blob/main/collect-stacks.sh
 
-2. give the file executable permissions
+2. give the file executable permissions:
+
 chmod +x collect-stacks.sh
 
-3.) install elfutils
+3.) install elfutils:
+
 yum install elfutils
 
-4.) create the output directory
+4.) create the output directory:
 
 cd /tmp
 mkdir splunk
 the default output directory in the script is /tmp/splunk
 
-5.) check the pid of main splunkd
-./splunk status | grep PID:
 
-note: the script will automatically pick up the main splunkd pid
-
-6.) execute the script:
+5.) execute the script:
 ./collect-stacks.sh
 
 the default script parameters are to collect a stack every .5 sec 1000 times. These defaults are sufficient.
