@@ -32,6 +32,8 @@ tar -zcvf archive-name.tar.gz source-directory-name
 
 note: it is normal to see .err for each .out file
 
-8.) generate a diag
+8.) generate a diag:
+
 $SPLUNK_HOME/bin
+
 ./splunk diag
