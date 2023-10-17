@@ -1,4 +1,4 @@
-# debugging_splunkd - collecting pstacks
+# pstacks on main splunkd
 collecting pstacks on the main splunkd PID
 
 
