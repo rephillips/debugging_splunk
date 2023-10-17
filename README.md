@@ -1,4 +1,4 @@
-# pstacks on main splunkd
+# collecting pstacks on the main splunkd process
 collecting pstacks on the main splunkd PID
 
 
