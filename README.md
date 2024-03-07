@@ -5,6 +5,10 @@ collecting pstacks on the main splunkd PID
 1. install the collect-stacks.sh script onto the host
 https://github.com/rephillips/debugging_splunk/blob/main/collect-stacks.sh
 
+a.) cd /opt/splunk/bin
+vi collect-stacks.sh
+
+
 2. give the file executable permissions:
 
 chmod +x collect-stacks.sh
