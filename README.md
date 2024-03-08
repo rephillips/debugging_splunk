@@ -13,7 +13,7 @@ vi collect-stacks.sh
 
 chmod +x collect-stacks.sh
 
-3.) install elfutils:
+3.) install elfutils (this step not required on splunk cloud ):
 
 yum install elfutils
 
@@ -35,8 +35,13 @@ cd /tmp/splunk
 tar -zcvf archive-name.tar.gz source-directory-name
 
 note: it is normal to see .err for each .out file
+move file to /tmp directory
 
-8.) generate a diag once pstack collection is finished:
+8.) scp from cloud instance to local machine:
+
+scp <indexer-host>:/tmp/<archive-name>.tar.gz .
+
+9.) generate a diag once pstack collection is finished (this step not required on splunk cloud ):
 
 $SPLUNK_HOME/bin
 
